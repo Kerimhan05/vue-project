@@ -114,7 +114,6 @@ const progressRange = computed(() =>
 }
 
 .steps__step-tab {
-  margin-right: 20px;
   width: 100%;
 }
 

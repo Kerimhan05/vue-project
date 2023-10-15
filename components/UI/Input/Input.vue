@@ -49,7 +49,7 @@ function onBlur(event: Event) {
     position: relative;
     display: flex;
     align-items: center;
-    width: 91%;
+    width: 100%;
     padding: 16px;
     font-weight: 500;
     background-color: #fff;
@@ -78,6 +78,6 @@ function onBlur(event: Event) {
 
   .input-wrap {
     position: relative;
-    display: block;
+    display: flex;
   }
 </style>
