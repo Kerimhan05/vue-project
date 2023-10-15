@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { isEqual } from 'lodash'
+import isEqual from 'lodash.isequal'
 import axios from 'axios'
 
 const props = defineProps<{
