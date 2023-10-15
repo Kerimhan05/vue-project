@@ -69,9 +69,14 @@ const progressRange = computed(() =>
           'steps__step-tab_active': index === current,
         }"
       >
-        <h1 class="step__name">
-          {{ el.name }}
-        </h1>
+        <div class="steps__head">
+          <div v-if="current" class="steps__arrow" @click="prev()">
+            <img src="./assets/arrow.svg" alt="назад">
+          </div>
+          <h1 class="step__name">
+            {{ el.name }}
+          </h1>
+        </div>
         <div class="steps__progress-bar">
           <div class="steps__progress" :style="`width: ${progressRange}%`" />
         </div>
@@ -111,6 +116,22 @@ const progressRange = computed(() =>
 
 .step__name {
   text-align: center;
+}
+
+.steps__head {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.steps__arrow {
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 20px;
+}
+.steps__arrow img{
+  width: 100%;
 }
 
 .steps__step-tab {
