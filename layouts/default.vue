@@ -17,6 +17,7 @@
   @media (max-width: 800px) {
     .layout__content {
       max-width: none;
+      padding: 0;
   }
   }
 </style>

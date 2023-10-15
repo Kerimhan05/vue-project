@@ -49,3 +49,10 @@ const controllerNavigation = [
     </RequestApi>
   </div>
 </template>
+
+<style scoped>
+.page-main {
+  margin: 20px 0;
+  padding: 0 10px;
+}
+</style>
